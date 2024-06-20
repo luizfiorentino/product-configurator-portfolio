@@ -1,0 +1,50 @@
+.iconContainer {
+  padding-top: 1rem;
+  /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.logoIcon {
+  /* width: 100%; */
+  max-height: 3rem;
+}
+
+.redText {
+  color: red;
+}
+
+@media (min-width: 768px) {
+  .logoAndWelcomeBanner {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: 1rem;
+    padding-bottom: 2.5rem;
+  }
+  .logoIcon {
+    max-height: 4rem;
+  }
+  /* .banner {
+    margin-top: 0;
+
+    display: flex;
+    text-align: right;
+  } */
+  .banner {
+    margin-top: 0;
+    text-align: right;
+  }
+
+  .banner::before {
+    content: "\A"; /* Insert a line break before each line of content */
+    white-space: pre; /* Preserve white spaces and line breaks */
+    display: inline-block; /* Make each line behave as a block */
+    height: 1em; /* Adjust the line height */
+  }
+
+  .iconContainer {
+    padding-top: 0;
+  }
+}

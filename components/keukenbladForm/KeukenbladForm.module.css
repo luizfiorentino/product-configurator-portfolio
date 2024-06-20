@@ -1,0 +1,791 @@
+.thicknessSelector {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 12rem; */
+}
+
+.stollewandInputs {
+  padding-left: 32px;
+  padding-right: 1rem;
+}
+.addStollewandButton {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.stollewandList {
+  padding-left: 2rem;
+}
+.stollenwandContainer {
+  /* border: 1px solid red; */
+  margin-bottom: 1rem;
+}
+
+.addStollenwand {
+  font-size: 16px !important;
+}
+
+.spacingTop {
+  margin-top: 1.5rem;
+}
+
+.optionStollenwand {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+.paddingBottom {
+  padding-bottom: 0.5rem;
+}
+
+.productName {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.inputFields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: left;
+  /* gap: 1rem; */
+  margin-bottom: 2rem;
+}
+
+.KBinputFields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.errorMessage {
+  /* display: flex;
+    flex-wrap: wrap;*/
+  max-width: 290px;
+  color: red;
+  font-size: 16px;
+  /* font-style: italic; */
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-top: 7px;
+  margin-bottom: 1rem;
+}
+
+.measureInput {
+  font-size: 18px;
+  padding: 0.25rem 0;
+  padding-left: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
+  /* flex-direction: column; */
+}
+
+.measureInputError {
+  font-size: 18px;
+  padding: 0.25rem 0;
+  padding-left: 1rem;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.selectTag {
+  font-size: 18px;
+  text-align: center;
+  min-height: 2rem;
+}
+
+.inactiveButton {
+  max-width: 10rem;
+  font-size: 18px;
+  min-height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #0dab59;
+  font-weight: bold;
+  border: none;
+  opacity: 0.5;
+  justify-content: center;
+}
+
+.inactiveNextButton {
+  width: 10rem;
+  font-size: 18px;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #0dab59;
+  font-weight: bold;
+  border: none;
+  opacity: 0.5;
+}
+
+.sumbitNextButton {
+  width: 10rem;
+  font-size: 18px;
+  padding: 0.375rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #0dab59;
+  font-weight: bold;
+  border: none;
+  min-height: 3rem;
+}
+.sumbitNextButton:hover {
+  cursor: pointer;
+}
+
+.standardButton {
+  max-width: 10rem;
+  font-size: 18px;
+  min-height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: lightgray;
+  font-weight: bold;
+  border: none;
+}
+
+.submitButtonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  /* margin-left: 8px; */
+  gap: 1.5rem;
+}
+
+.sumbitButton {
+  max-width: 10rem;
+  font-size: 18px;
+  padding: 0.375rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #0dab59;
+  font-weight: bold;
+  border: none;
+  min-height: 3rem;
+}
+
+.sumbitButton:hover {
+  cursor: pointer;
+}
+
+.keukenBladInactive {
+  max-width: 10rem;
+  font-size: 18px;
+  min-height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: grey;
+  font-weight: bold;
+  border: none;
+}
+
+.keukenBladInactive:hover {
+  cursor: pointer;
+}
+
+.measureLabel {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.afwerkingContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.8rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.afwerkingBanner {
+  display: flex;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.spaceLeft {
+  margin-left: 5px;
+}
+
+.afwerkingPrice {
+  margin-bottom: 0.5rem;
+}
+
+.priceAfwerking {
+}
+
+.infoAfwerking {
+  /* display: none; */
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.afwerkingBanner.clicked .infoAfwerking {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid lightgray;
+}
+
+.afwerkingBanner {
+  cursor: pointer;
+}
+.afwerkingCB {
+  margin-bottom: 5px;
+}
+
+.deleteButtonContainer {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: right;
+  margin-top: 0rem;
+}
+.deleteButtonNarrow {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: right;
+  margin-top: 0rem;
+}
+.red {
+  color: red;
+}
+
+@media (max-width: 767px) {
+  .afwerkingBanner {
+    cursor: pointer;
+  }
+}
+
+.kbMeasures {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.editRemoveButtons {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.editButton {
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+.editButton:hover {
+  cursor: pointer;
+}
+
+.bigScreen {
+  display: none;
+}
+.deleteButton {
+  /* border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: red;
+  opacity: 0.8;
+  color: white; */
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: red;
+  opacity: 0.8;
+  color: white;
+  /* margin-bottom: 1rem; */
+  min-height: 1.8rem;
+  max-width: 2rem;
+}
+
+.binIconInner {
+  font-size: 18px;
+  display: flex;
+}
+
+.KBExternalContainer {
+  border-radius: 8px;
+  margin-left: 0;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.noMarginTop {
+  margin-top: 0;
+}
+
+.deleteButton:hover {
+  cursor: pointer;
+}
+
+.deleteIcon {
+  display: flex;
+}
+
+.editKBDikte {
+  display: flex;
+  flex-direction: column;
+}
+.spacingBottomStollen {
+  margin-bottom: 1rem;
+}
+
+.KBLabel {
+  font-size: 18px;
+}
+.spacingBottom {
+  margin-bottom: 1rem;
+}
+
+.keukenbladenList {
+  font-size: 18px;
+}
+
+.itemBanner {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+.stollenwandDisclaimer {
+  max-width: 18rem;
+  margin-bottom: 0.8rem;
+}
+.infoIcon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
+  line-height: 1rem;
+}
+
+.greenCheckIcon {
+  color: #0dab59;
+  display: flex;
+}
+.afwerkingItems {
+  margin-left: 1rem;
+}
+
+.afwerkingZijdenLabel {
+  font-size: 16px;
+  font-weight: bold;
+  /* margin-left: 1.1rem; */
+}
+
+.singleKBinner {
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+  /* padding: 1rem 2rem; */
+  padding: 1rem 2rem 0;
+  padding-top: 1.5rem;
+
+  /* border: 1px solid red; */
+}
+.largerKB {
+  padding: 1rem 2rem 0;
+  /* border: 1px solid red; */
+}
+.toevoegenAndExtraButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.productTopImage {
+  max-height: 150px;
+  width: 100%;
+  overflow: hidden; /* Hide any content that exceeds the container's height */
+  margin-bottom: 10px;
+}
+
+.productTopImage img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+.productImageAndInputs {
+  display: flex;
+  flex-direction: column;
+}
+.KBTopImage {
+  max-height: 150px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+}
+.KBTopImage img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+.priceLabel {
+  /* margin-left: 1.1rem; */
+}
+.subTotalLabel {
+  font-weight: bold;
+  margin-left: 2rem;
+}
+.subTotalLabelNarrow {
+  font-weight: bold;
+  margin-left: 2rem;
+}
+.priceAfwerkingLabel {
+  /* margin-left: 1.1rem; */
+}
+.afwerkingZijdenLabelNone {
+  font-weight: normal;
+  font-size: 16px;
+  /* margin-left: 1.1rem; */
+}
+.listOfKeukenbladen {
+  margin: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .productTopImage {
+    /* max-width: 40%; */
+    margin-bottom: 2rem;
+  }
+  .stollewandList {
+    padding-left: 0;
+  }
+  .addStollewandButton {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+  /* .productTopImage img {
+    max-width: 100%;
+    height: auto;
+  } */
+  .productName {
+    font-size: 26px;
+    margin-top: 0;
+    max-width: none;
+    margin-bottom: 1rem;
+  }
+
+  .keukenBladData {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3px;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  .afwerkingZijdenLabelNone {
+    display: flex;
+  }
+
+  .kbMeasures {
+    margin-bottom: 0.5rem;
+  }
+
+  .extraKeukenbladen {
+    border-radius: 8px;
+  }
+  .geenAfwerkingMessage {
+    max-width: 10rem;
+  }
+  .subTotalLabel {
+    margin-left: 1rem;
+  }
+  .subTotalLabelNarrow {
+    margin-left: 1rem;
+  }
+  .bullet {
+    font-size: 1.2em;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  .KBLabel {
+    margin-top: 1rem;
+    max-width: 150px;
+  }
+
+  .singleKB {
+    min-width: 15rem;
+  }
+  .KBExternalContainer {
+    border-radius: 8px;
+
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .singleKBinner {
+    /* border: 1px solid lightgrey; */
+    padding: 0 1rem;
+
+    /* border: 1px solid red; */
+  }
+  .deleteButtonContainer {
+    display: flex;
+    justify-content: right;
+    margin-top: 1.5rem;
+  }
+  .deleteButtonNarrow {
+    display: flex;
+    justify-content: right;
+    margin-top: 0rem;
+    margin-top: 1rem;
+  }
+
+  .keukenbladenList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .listOfKeukenbladen {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    gap: 1rem;
+    margin-left: 5px;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    /* gap: 3rem; */
+    /* justify-content: space-between; */
+    /* padding: 0 0 0 1rem; */
+  }
+
+  .singleKB {
+    /* margin-left: 10px; */
+    max-width: 10rem;
+  }
+
+  .largerKB {
+    /* border: 1px solid red; */
+
+    /* padding: 1rem 3.4rem 0; */
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .afwerkingContainer {
+    display: flex;
+    width: 40%;
+    margin-left: 2rem;
+  }
+  .submitButtonContainer {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .addAndExtraButtons {
+    display: flex;
+    justify-content: right;
+  }
+  .nextButtonContainer {
+    display: flex;
+    justify-content: right;
+  }
+  .sumbitNextButton {
+    display: flex;
+    justify-content: center;
+  }
+  .inactiveNextButton {
+    align-items: center;
+    justify-content: center;
+  }
+  .sumbitButton {
+    order: 2;
+  }
+  /* .sumbitNextButton {
+    display: none;
+  } */
+  .keukenbladenList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* justify-content: space-between; */
+    /* gap: 2rem; */
+  }
+  .KBinputFields {
+    max-width: 60%;
+    margin-right: 2rem;
+  }
+  .editRemoveButtons {
+    justify-content: right;
+  }
+  .toevoegenAndExtraButtons {
+    flex-direction: row;
+  }
+  .afwerkingContainer {
+    margin-left: 1rem;
+    margin-bottom: 0;
+  }
+  .infoAfwerking {
+    margin: 0 0 0.8rem;
+  }
+  .submitButtonContainer {
+    margin-left: 0;
+  }
+
+  .productTopImage {
+    min-width: 38%;
+    margin-right: 1rem;
+  }
+  .KBTopImage {
+    width: 100%;
+    display: flex;
+  }
+  .KBTopImage img {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .measureLabel {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .inactiveButton {
+    order: 2;
+  }
+  .keukenBladData {
+    margin-bottom: 0;
+  }
+  .afwerkingBanner {
+    font-size: 18px;
+  }
+  .standardButton {
+    order: 2;
+  }
+  .keukenBladInactive {
+    order: 2;
+  }
+  .afwerkingCB {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .stollewandInputs {
+  }
+  .stollewandList {
+    display: flex;
+
+    padding: 0 2rem;
+  }
+  .stollenwandContainer {
+    margin-right: 1rem;
+  }
+  .addStollewandButton {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+  .KBinputFields {
+    /* margin-left: 2.5rem; */
+    margin-right: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .listOfKeukenbladen {
+    gap: 2.4rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .singleKBinner {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-left: 2rem;
+  }
+  .alignment {
+    display: flex;
+    justify-content: right;
+    line-height: 1.1;
+  }
+  .noAfwerkingLabel {
+    width: 100%;
+  }
+  .geenAfwerkingMessage {
+    max-width: none;
+  }
+
+  .afwerkingContainer {
+    margin-left: 4rem;
+  }
+
+  .afwerkingBanner {
+    /* font-size: 18px; */
+    padding-bottom: 5px;
+  }
+  .afwerkingCB {
+    /* font-size: 18px; */
+    margin-bottom: 0.8rem;
+  }
+  .submitButtonContainer {
+    justify-content: right;
+    gap: 2.5rem;
+  }
+  .extraKeukenbladen {
+    min-width: 18rem;
+  }
+  .largerKB {
+    display: flex;
+    gap: 0rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    margin-left: 0rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .spacingBottom {
+    margin-bottom: 0;
+    margin-right: 4rem;
+  }
+
+  .alignment {
+    display: none;
+  }
+  .afwerkingZijdenLabel {
+    font-size: 18px;
+  }
+  .bigScreen {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+
+    align-items: end;
+    margin-top: 3.4rem;
+  }
+  .priceLabel {
+    margin-left: 1.3rem;
+  }
+  .subTotalLabel {
+    margin-left: 2rem;
+  }
+  .subTotalLabelNarrow {
+    margin-left: 2rem;
+  }
+}

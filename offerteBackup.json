@@ -1,0 +1,46 @@
+{
+  "id": 100,
+  "clientName": "Pascal Boulos",
+  "address": "joanatraat 123",
+  "email": "Luka@hotmai.com",
+  "phoneNumber": "06123456",
+  "stad": "Amsterdam",
+  "postcode": "1010Re",
+  "aantalKeukenbladen": 1,
+  "aantalSpatwanden": 0,
+  "extraOptionsChosen": false,
+  "totaal": 887,
+  "createdAt": "2024-03-27T15:25:00.019Z",
+  "updatedAt": "2024-03-27T15:25:00.019Z",
+  "keukenbladen": [
+    {
+      "id": 137,
+      "productNaam": "Dekton Taga Keramiek Keukenblad",
+      "productVariatie": "1,2 cm massief",
+      "productAfbeeldingUrl": "https://stonecenter-shop.nl/wp-content/uploads/2024/01/Taga.webp",
+      "lengte": 100,
+      "breedte": 100,
+      "keukenbladPrijs": 852,
+      "afwerking": true,
+      "afwerkingPrijs": 35,
+      "afwerkingVoor": false,
+      "afwerkingAchter": false,
+      "afwerkingRechts": false,
+      "afwerkingLinks": false,
+      "totalePrijs": 887,
+      "offerteDataId": 100
+    }
+  ],
+  "spatwanden": [],
+  "uitsparingSpoelbak": null,
+  "uitsparingKookplaat": null,
+  "kraangaten": null,
+  "inmetingen": null,
+  "transporten": null,
+  "montages": null,
+  "zelfAfhalenDelft": {
+    "id": 8,
+    "offerteDataId": 100
+  },
+  "zelfAfhalenBreda": null
+}

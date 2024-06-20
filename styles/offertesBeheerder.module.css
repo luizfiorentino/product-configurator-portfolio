@@ -1,0 +1,33 @@
+.bold {
+  font-weight: bold;
+}
+.spaceUnder {
+  padding-bottom: 1rem;
+}
+.topBanner {
+  margin-left: 1rem;
+}
+.summaryContainer {
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem;
+}
+.headerBanner {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+.offerteCard {
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+@media (min-width: 768px) {
+  .offertesContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

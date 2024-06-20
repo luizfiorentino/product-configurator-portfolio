@@ -1,0 +1,591 @@
+.loading {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.spacingRight {
+  margin-right: 5px;
+}
+.hoverMe:hover {
+  cursor: pointer;
+}
+.spinner {
+  margin-left: 0.5rem;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid red;
+  width: 18px;
+  height: 18px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.red {
+  color: red;
+}
+.bold {
+  font-weight: bold;
+}
+.spaceUnder {
+  margin-bottom: 1rem;
+}
+.spaceUnderLarge {
+  margin-bottom: 1.5rem;
+}
+
+.backButton {
+  border: none;
+  max-width: 10rem;
+  font-size: 18px;
+  min-height: 3rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backButton:hover {
+  cursor: pointer;
+}
+.spaceUp {
+  margin-top: 1.5rem;
+}
+
+.clientInfosContainer {
+  margin-top: 1.5rem;
+}
+
+.itemBanner {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.greenCheckIcon {
+  color: #0dab59;
+  display: flex;
+}
+
+.overviewBanner {
+  font-size: 18px;
+}
+
+.productImgInner {
+  max-width: 100%;
+  display: flex;
+}
+
+.divider {
+  border: 1px solid lightgray;
+  margin-top: 1.5rem;
+}
+.externalContainer {
+  /* padding: 0.5rem 1rem 5rem; */
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  /* max-width: 500px; */
+}
+
+.addElementBanner {
+  margin-bottom: 0;
+}
+
+.elementToelichting {
+  line-height: 1.5;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+/* .addElementBanner {
+    margin-bottom: 2rem;
+  } */
+
+.productBanner {
+  margin-top: 0;
+  font-size: 21px;
+}
+
+.materialBanner {
+  font-size: 18px;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+}
+
+.extraPadding {
+  padding-bottom: 10px;
+}
+.extraPaddingSmall {
+  padding-bottom: 5px;
+}
+.inputLabel {
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.inputField {
+  font-size: 18px;
+  margin-bottom: 0.8rem;
+  padding-left: 10px;
+  min-height: 1.5rem;
+  display: flex;
+}
+
+.selectContainer {
+  padding: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.extraOptionBanner {
+  margin-top: 1rem;
+}
+
+.optionContainer {
+  text-align: center;
+}
+
+.imageContainer img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imageContainer {
+  position: relative;
+  overflow: hidden;
+  /* width: 300px;
+    height: 200px; */
+}
+
+.imageContainer:hover img {
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+
+.afwerkingThumbnail {
+  max-width: 150px;
+  height: auto;
+  /* max-height: 100px; */
+}
+
+.elementInfoIcon {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.spaceUnderElement {
+  margin-bottom: 2rem;
+}
+
+.toepassingLabel {
+  font-size: 18px;
+  line-height: 1.5;
+  display: flex;
+  align-items: normal;
+  gap: 0.5rem;
+  padding-top: 5px;
+}
+.paddingBottomLarge {
+  padding-bottom: 15rem;
+}
+.buttonMarginUp {
+  margin-top: 1.5rem;
+}
+
+.checkboxesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* margin-bottom: 0.8rem; */
+}
+
+.checkboxesContainerElement {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.afwerkingBanner {
+  margin-bottom: 1rem;
+}
+
+.shortSpaceUnder {
+  margin-bottom: 4px;
+}
+
+.sumbitButton {
+  max-width: 10rem;
+  font-size: 18px;
+  padding: 0.375rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #0dab59;
+  font-weight: bold;
+  border: none;
+  min-height: 3rem;
+}
+
+.sumbitButton:hover {
+  cursor: pointer;
+}
+.elementButton {
+  max-width: 10rem;
+  font-size: 18px;
+  padding: 0.375rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #0dab59;
+  font-weight: bold;
+  border: none;
+  min-height: 3rem;
+}
+
+.elementButton:hover {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.inactiveButton {
+  max-width: 10rem;
+  font-size: 18px;
+  min-height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #0dab59;
+  font-weight: bold;
+  border: none;
+  opacity: 0.5;
+}
+
+.douchebakAndElementPriceContainer {
+  border-top: 1px solid lightgray;
+}
+.pricesBorder {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+
+.opmerkingContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.textArea {
+  font-size: 18px;
+  min-height: 4rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.errorMessage {
+  max-width: 290px;
+  color: red;
+  font-size: 16px;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.deleteIcon {
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: red;
+  opacity: 0.8;
+  color: white;
+  min-height: 1.8rem;
+  max-width: 2rem;
+}
+.deleteIconInner {
+  font-size: 18px;
+  display: flex;
+}
+
+.deleteIcon:hover {
+  cursor: pointer;
+}
+
+.inputContainerInner {
+  margin-right: 12px;
+}
+.materialBannerTablet {
+  display: none;
+}
+
+.elementInnerTop {
+  display: flex;
+  flex-direction: column;
+}
+.spacingRed {
+  padding-bottom: 0.5rem;
+}
+.afmetingBanner {
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+.productsSummary {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .spaceUnder {
+    margin-bottom: 0;
+  }
+  .inactiveButton {
+    order: 2;
+  }
+  .optionBanner {
+    font-size: 20px;
+  }
+  .sumbitButton {
+    order: 2;
+  }
+  .inputField {
+    min-height: 2rem;
+  }
+  .externalContainer {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    margin: 0;
+  }
+  .afmetingBanner {
+    font-size: 20px;
+  }
+  .spaceUnderLarge {
+    margin-bottom: 0;
+  }
+  .productBanner {
+    font-size: 28px;
+    margin-bottom: 2rem;
+  }
+  .backButton {
+    display: flex;
+    order: 1 !important;
+  }
+  .innerTop {
+    display: flex;
+    align-items: top;
+  }
+  .extraOptionBanner {
+    font-size: 18px;
+    margin-top: 0.5rem;
+  }
+  .materialBannerTablet {
+    display: block;
+    font-size: 22px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .elementToelichting {
+    padding-left: 0;
+    padding-bottom: 1rem;
+  }
+  .productImg {
+    display: flex;
+    flex-direction: column;
+  }
+  .productImgInner {
+    max-width: 350px;
+    margin-right: 2rem;
+  }
+  .afwerkingAndToepassing {
+    display: flex;
+    flex-direction: column;
+  }
+  .afwerkingContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .checkboxesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5px;
+  }
+
+  .materialBanner {
+    display: none;
+  }
+  .inputsContainer {
+    width: 100%;
+    margin-right: 0.5rem;
+  }
+  .inputsContainerInner {
+    display: flex;
+    flex-direction: column;
+  }
+  .inputContainerInner {
+    display: flex;
+    flex-direction: column;
+  }
+  .addDouchebak {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .addDouchebakSingle {
+    display: flex;
+    justify-content: right;
+  }
+  .elementInnerTop {
+    max-width: 50%;
+  }
+  .divider {
+    display: none;
+  }
+  .overviewBanner {
+    margin-top: 0;
+  }
+
+  .toepassingLabel {
+    align-items: first baseline;
+    font-size: 20px;
+  }
+  .nextButton {
+    display: flex;
+    justify-content: right;
+  }
+  .productsSummary {
+    margin-top: -5px;
+    margin-right: 2rem;
+  }
+  .deleteContainer {
+    display: flex;
+    justify-content: right;
+    margin-top: 1rem;
+  }
+  .deleteIcon {
+    margin-top: 0;
+  }
+  .checkboxesContainerElement {
+    margin-bottom: 0;
+  }
+  .spacingRed {
+    margin-bottom: 1rem;
+  }
+  .afwerkingBanner {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .toepassingLabel {
+    font-size: 20px;
+  }
+  .textArea {
+    min-height: 8rem;
+  }
+  .inputLabel {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .desktopBlock {
+    display: flex;
+  }
+  .overviewBanner {
+    font-size: 20px;
+  }
+  .optionBanner {
+    font-size: 18px;
+  }
+  .itemBanner {
+    font-size: 20px;
+  }
+  .afwerkingAndToepassing {
+    display: flex;
+    flex-direction: row;
+  }
+  .innerTop {
+    margin-right: 0;
+  }
+  .sideBySide {
+    display: flex;
+    flex-direction: row !important;
+  }
+  .inputsContainer {
+    margin-top: -5px;
+    min-width: 20rem;
+    margin-right: 0;
+  }
+  .productsSummary {
+    min-width: 15rem;
+    margin-right: 4rem;
+  }
+
+  .extraOptionBanner {
+    margin-top: 0;
+  }
+  .checkboxesContainer {
+    flex-direction: column;
+  }
+  .stap2Container {
+    margin-top: -5px;
+  }
+  .inputLabel {
+  }
+}
+
+@media (min-width: 1400px) {
+  .innerTop {
+    margin-right: 4rem;
+  }
+  .productImg {
+    margin-right: 4rem;
+  }
+  .afwerkingThumbnail {
+    max-width: 300px;
+  }
+  .checkboxesContainer {
+    gap: 2rem;
+  }
+  .buttonMarginUp {
+    margin-top: 2rem;
+  }
+}

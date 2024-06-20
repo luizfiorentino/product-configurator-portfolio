@@ -1,0 +1,277 @@
+.termsAndConditionsContainer {
+  margin-bottom: 1.5rem;
+}
+.productImage {
+  max-height: 10rem;
+}
+.KBTopImage {
+  max-height: 150px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: 1px solid lightgray;
+}
+
+.KBTopImage img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.test {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.termsAndConditionsLink {
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.errorMessage {
+  /* display: flex;
+  flex-wrap: wrap;*/
+  max-width: 20rem;
+  color: red;
+  font-size: 16px;
+  /* font-style: italic; */
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-top: 7px;
+
+  margin-bottom: 0;
+}
+
+.clientInputContainer {
+  font-size: 18px;
+  min-height: 2rem;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.clientInfosInput {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 18px;
+  min-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.red {
+  color: red;
+}
+
+.backButton {
+  border: none;
+  max-width: 10rem;
+  font-size: 18px;
+  min-height: 3rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backButton:hover {
+  cursor: pointer;
+}
+
+.submitButton {
+  max-width: 10rem;
+  font-size: 18px;
+  padding: 0.375rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #0dab59;
+  font-weight: bold;
+  border: none;
+  min-height: 3rem;
+}
+
+.submitButtonInactive {
+  max-width: 10rem;
+  font-size: 18px;
+  padding: 0.375rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #0dab59;
+  opacity: 0.5;
+  font-weight: bold;
+  border: none;
+  min-height: 3rem;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+}
+
+.footerButtons {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.imageArea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  padding: 0.5rem;
+  /* max-width: 482px; */
+}
+.imagePreview {
+  width: 150px;
+  height: 150px;
+  object-fit: scale-down;
+  border: 1px solid var(--color--pale-grey);
+  border-radius: 4px;
+  padding: 5px;
+}
+.dropzone {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 22px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px dotted lightgrey;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.deleteIcon {
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: red;
+  opacity: 0.8;
+  color: white;
+  /* margin-bottom: 1rem; */
+  min-height: 1.8rem;
+  max-width: 2rem;
+}
+
+.spaceUnder {
+  margin-bottom: 0.5rem;
+}
+
+.deleteIconContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.deleteIcon:hover {
+  cursor: pointer;
+}
+.uploadIcon {
+  margin-left: 5px;
+}
+
+@media (min-width: 768px) {
+  .test {
+    /* display: flex; */
+    /* flex-direction: row; */
+  }
+  .clientInfosInput {
+    width: 100%;
+  }
+  .KBTopImage {
+    /* max-width: 40%; */
+    width: 100%;
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  .KBTopImage img {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .voorAndAchterNames {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    /* background-color: red; */
+  }
+  .addressFirst {
+    display: flex;
+    gap: 2rem;
+  }
+  .addressSecond {
+    display: flex;
+    gap: 2rem;
+  }
+  .emailAndPhone {
+    display: flex;
+    gap: 2rem;
+  }
+  .formUpperData {
+    /* order: 2; */
+  }
+  .voornaam {
+  }
+  .footerButtons {
+    justify-content: right;
+    gap: 2.5rem;
+  }
+  .termsAndConditionsContainer {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 18px;
+    margin-top: 1rem;
+    margin-left: 5px;
+  }
+  .errorMessage {
+    max-width: none;
+  }
+  .dropzone {
+    min-height: 6rem;
+    display: flex;
+    align-items: center;
+  }
+  .imageArea {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .label {
+    margin-bottom: 0.8rem;
+  }
+  .voorAndAchterNames {
+    gap: 6rem;
+  }
+  .addressFirst {
+    gap: 6rem;
+  }
+  .addressSecond {
+    gap: 6rem;
+  }
+  .addressSecond {
+    gap: 6rem;
+  }
+  .emailAndPhone {
+    gap: 6rem;
+  }
+}

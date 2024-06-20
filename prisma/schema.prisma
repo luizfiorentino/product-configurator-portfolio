@@ -1,0 +1,169 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model OfferteData {
+  id                 Int       @id @default(autoincrement())
+  clientName         String?
+  address            String?
+  email              String?
+  phoneNumber        String?
+  stad               String
+  postcode           String
+  aantalKeukenbladen Int
+  aantalSpatwanden   Int
+  extraOptionsChosen Boolean
+  totaal             Float
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+
+  keukenbladen        Keukenblad[]
+  spatwanden          Spatwand[]
+  stollenwanden       Stollenwand[]
+  uitsparingSpoelbak  UitsparingSpoelbak?
+  uitsparingKookplaat UitsparingKookplaat?
+  kraangaten          Kraangaten?
+  inmetingen          Inmeting?
+  transporten         Transport?
+  montages            Montage?
+  zelfAfhalenDelft    ZelfAfhalenDelft?
+  zelfAfhalenBreda    ZelfAfhalenBreda?
+}
+
+model Keukenblad {
+  id                   Int       @id @default(autoincrement())
+  productNaam          String
+  productVariatie      String
+  productAfbeeldingUrl String
+  lengte               Float
+  breedte              Float
+  keukenbladPrijs      Float
+  afwerking            Boolean
+  afwerkingPrijs       Float
+  afwerkingVoor        Boolean
+  afwerkingAchter      Boolean
+  afwerkingRechts      Boolean
+  afwerkingLinks       Boolean
+  totalePrijs          Float
+
+  // Foreign key
+  offerteData         OfferteData @relation(fields: [offerteDataId], references: [id])
+  offerteDataId       Int
+}
+
+model Stollenwand {
+  id                   Int       @id @default(autoincrement())
+  productNaam          String
+  productVariatie      String
+  productAfbeeldingUrl String
+  optie                String?
+  breedte              Float
+  hoogte               Float
+  aantal               Int
+  eenheidsPrijs        Int
+  totalePrijs          Float
+  keukenbladId         String
+  offerteData         OfferteData @relation(fields: [offerteDataId], references: [id])
+  offerteDataId       Int
+}
+
+model Spatwand {
+  id                   Int       @id @default(autoincrement())
+  productNaam          String
+  productVariatie      String
+  productAfbeeldingUrl String
+  lengte               Float
+  breedte              Float
+  spatwandPrijs        Float
+  afwerking            Boolean
+  afwerkingPrijs       Float
+  totalePrijs          Float
+
+  offerteData         OfferteData @relation(fields: [offerteDataId], references: [id])
+  offerteDataId       Int
+}
+
+model UitsparingSpoelbak {
+  id                  Int       @id @default(autoincrement())
+  typeInstallatie     String
+  aantal              Int
+  eenheidsprijs       Float
+  prijsUitsparingen   Float
+ 
+  
+  offerteData         OfferteData @relation(fields: [offerteDataId], references: [id])
+  offerteDataId       Int         @unique
+}
+
+model UitsparingKookplaat {
+  id                  Int       @id @default(autoincrement())
+  typeInstallatie     String
+  aantal              Int
+  eenheidsprijs       Float
+  prijsUitsparingen   Float
+ 
+  offerteData         OfferteData @relation(fields: [offerteDataId], references: [id])
+  offerteDataId       Int         @unique
+}
+
+model Kraangaten {
+  id                  Int       @id @default(autoincrement())
+  aantal              Int
+  eenheidsprijs       Float
+  prijsKraangaten     Float
+ 
+  offerteData         OfferteData @relation(fields: [offerteDataId], references: [id])
+ offerteDataId       Int         @unique
+}
+
+model Inmeting {
+  id                  Int       @id @default(autoincrement())
+  afstandOptie        String
+  prijsInmeting       Float
+ 
+  offerteData         OfferteData @relation(fields: [offerteDataId], references: [id])
+  offerteDataId       Int         @unique
+}
+
+model Transport {
+  id                  Int       @id @default(autoincrement())
+  afstandOptie        String
+  prijsTransport      Float
+ 
+  offerteData         OfferteData @relation(fields: [offerteDataId], references: [id])
+  offerteDataId       Int         @unique
+}
+
+model Montage {
+  id                  Int       @id @default(autoincrement())
+  montageOptie        String
+  prijsMontage        Float
+ 
+  offerteData         OfferteData @relation(fields: [offerteDataId], references: [id])
+ offerteDataId       Int         @unique
+}
+
+model ZelfAfhalenDelft {
+  id                Int               @id @default(autoincrement())
+  
+  offerteData       OfferteData       @relation(fields: [offerteDataId], references: [id])
+ offerteDataId       Int         @unique
+}
+
+model ZelfAfhalenBreda {
+  id                Int               @id @default(autoincrement())
+  
+  offerteData       OfferteData       @relation(fields: [offerteDataId], references: [id])
+  offerteDataId       Int         @unique
+}
